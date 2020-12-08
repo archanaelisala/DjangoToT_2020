@@ -40,3 +40,11 @@ def Register(request):
 
 def Javascript_Ex(request):
 	return render(request,'fy/math.html')
+
+
+
+def LoginRegister(request):
+	return render(request,'fy/loginregister.html')
+
+def boost(request):
+	return render(request,'fy/bootstrap.html')

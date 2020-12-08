@@ -27,7 +27,9 @@ urlpatterns = [
     path('cssex/',views.cssexample),
     path('login',views.Login),
     path('register',views.Register),
-    path('javascript',views.Javascript_Ex)
+    path('javascript',views.Javascript_Ex),
+    path('bootstrapex',views.LoginRegister),
+    path('bootstrapex2',views.boost)
 
 
 ]
