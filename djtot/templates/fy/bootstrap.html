@@ -7,14 +7,19 @@
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<h2 class="mx-5 bg-info text-white">Hello.. this is Bootstrap Demo</h2>
-	<h2 class="mx-5 bg-secondary text-white  text-center">Hello. this is Bootstrap Demo</h2>
+	<!-- <h2 class="mx-5 bg-secondary text-white  text-center">Hello. this is Bootstrap Demo</h2>
 	<h3 class="bg-danger text-white p-2 mr-2">welcome</h3>
 	<h4 class="bg-warning text-white text-center ml-3 mr-3 border rounded">welcome</h4>
 
-	<div class="container">
+	 <div class="container">
 
 		<div class="row">
 			<div class="jumbotron col mr-2">
@@ -43,8 +48,123 @@
 			</div>
 			
 		</div>
-	</div>
+	</div>-->
+    <div class="container">
+    	<div class="row">
+    		<div class="jumbotron col mr-2 mt-3 shadow-lg">
+    			<h3 class="bg-primary text-center p-2 text-dark border rounded">Login</h3>
+    			<form>
+    				<input type="text" name="" placeholder="Enter Username" class="form-control">
+    				<input type="password" name="" class="form-control" placeholder="Enter password">
+    			</form>
 
+    		</div>
+    		<div class="card col mr-2 mt-3 shadow-lg">
+    			<h3 class="bg-info mx-2 mt-3 text-center p-2 text-dark border rounded shadow-lg">Register</h3>
+    			<form>
+    				<input type="text" name="fname" placeholder="First Name" class="form-control"><br>
+    				<input type="text" name="lname" placeholder="Last Name" class="form-control"><br>
+
+    				<div class="input-group">
+    					<input type="text" name="" placeholder="Email" class="form-control">
+    					<div class="input-group-append">
+    				        <span class="input-group-text">@example.com|@example.in</span>
+    					</div>
+    				</div><br>
+    				<input type="password" name="" placeholder="Enter password" class="form-control"><br>
+    				<textarea rows="3" id="Address" class="form-control form-control-sm" placeholder="Address"></textarea><br>
+
+    				<!-- ## DROP DOWN -->
+    
+    				<div class="form-group">
+    					<div class="dropdown">
+    					    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+    					      Select Course
+    					    </button>
+    					    <div class="dropdown-menu">
+    					      <a class="dropdown-item" href="https://www.python.org/">Python</a>
+    					      <a class="dropdown-item" href="https://www.android.com/">Android</a>
+    					      <a class="dropdown-item" href="#">Data Science</a>
+    					    </div>
+    					
+    					</div>
+    				</div>
+
+
+
+    				<!-- ## RADIO BUTTON -->
+
+    				<div class="form-group">
+    					<label><b>Gender</b></label>
+    					<div class="form-check">
+	    					<input type="radio" id="male" name="gender" value="male" class="mb-2 sm-2">
+	    					<label>Male</label>
+    					</div>
+    					<div class="form-check">
+	    					<input type="radio" id="female" name="gender" value="female" class="mb-2 sm-2">
+	    					<label>Female</label>
+    					</div>
+    				</div>
+
+
+    				<!-- ## CHECKBOX -->
+    				<div class="form-group">
+    					<label for="checkbox"><b>Languages known</b></label>
+    					<div class="form-check">
+    						<label class="form-check-label1" for="check1">
+    							<input type="checkbox" name="English" id="check1" value="eng">English
+    						</label>
+    					</div>
+    					<div class="form-check">
+    						<label class="form-check-label2" for="check2">
+    							<input type="checkbox" name="Telugu" id="check2" value="tel">Telugu
+    						</label>
+    					</div>
+    					<div class="form-check">
+    						<label class="form-check-label3" for="check3">
+    							<input type="checkbox" name="Hindi" id="check3" value="Hin">Hindi
+    						</label>
+    					</div>
+    					
+    				</div>
+
+    				<!-- ## SELECTION -->
+    				<div class="form-group">
+    				      <label for="select"><b>Select Passed Out Year</b></label>
+    				      <select class="form-control" id="select" name="Select">
+    				        <option>2015</option>
+    				        <option>2016</option>
+    				        <option>2017</option>
+    				        <option>2018</option>
+    				      </select>
+    				</div>
+
+    				<!-- ## Range -->
+    				<div class="form-group">
+    					<label><b>Select within Range</b></label>
+    					<input type="date" name="" min="2020-12-09" max="2020-12-31" class="form-control">
+    					
+    				</div>
+
+
+    				<!-- ## DATE OF BIRTH -->
+    				<div class="form-group">
+    					<label for="DOB"><b>DOB      </b></label>
+    					<input type="date" name="" id="DOB" placeholder="Select your DOB" class="form-control">
+    				</div>
+
+    				<div class="form-group">
+    					<button type="submit" class="btn btn-dark text-center ml-3">Register</button>
+    					
+    				</div>
+
+
+    			</form>
+    			
+    		</div>
+    	</div>
+    	
+    </div>
 
 </body>
 </html>
