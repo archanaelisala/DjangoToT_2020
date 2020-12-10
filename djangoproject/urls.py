@@ -14,8 +14,9 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path,include
 from djtot import views
+from secondapp import views as v
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,7 +30,17 @@ urlpatterns = [
     path('register',views.Register),
     path('javascript',views.Javascript_Ex),
     path('bootstrapex',views.LoginRegister),
-    path('bootstrapex2',views.boost)
+    path('bootstrapex2',views.boost),
+
+    ## SecondAPP
+
+    path('newlogin',v.newlogin),
+    path('newregister',v.regi),
+
+    #third app
+    path('crud/',include('CRUD.urls'))
+
+
 
 
 ]
