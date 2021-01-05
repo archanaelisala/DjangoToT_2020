@@ -38,7 +38,10 @@ urlpatterns = [
     path('newregister',v.regi),
 
     #third app
-    path('crud/',include('CRUD.urls'))
+    path('crud/',include('CRUD.urls')),
+
+    #4th app
+    path('formapp/',include('dynamicapp.urls'))
 
 
 

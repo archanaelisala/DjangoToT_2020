@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'djtot',
     'secondapp',
-    'CRUD'
+    'CRUD',
+    'dynamicapp'
 ]
 
 MIDDLEWARE = [

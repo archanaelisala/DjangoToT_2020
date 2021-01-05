@@ -14,6 +14,24 @@ class Student(models.Model):
 		return self.name+" "+self.email
 
 
+class StudentNew(models.Model):
+	name = models.CharField(max_length=30)
+	rollnum = models.CharField(max_length=20)
+	age = models.IntegerField()
+	phone = models.CharField(max_length=10)
+	email = models.EmailField(max_length=30)
+	gender = models.CharField(max_length=20)
+	languages = models.CharField(max_length=20,null=True)
+
+	def __str__(self):
+		return self.name
+
+
+
+
+
+
+
 
 class Emp(models.Model):
 	Ename = models.CharField(max_length=30)

@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css'%}">
+ 
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+	<div class="continer">
+
+		<div class="card mt-5 mx-auto col-md-8">
+			<h2 class="bg-dark  text-center text-white">Fetched Data</h2>
+
+		
+	
+	<table class="table table-striped  mt-2">
+		<thead>
+			<tr class="table-dark ">
+				<th>Name</th>
+				<th>Age</th>
+				<th>gender</th>
+				<th>Mobileno</th>
+				<th>Action</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+
+			
+			{% for info in data %}
+
+			
+			<td>{{info.name}}</td>
+			<td>{{info.age}}</td>
+			<td>{{info.gender}}</td>
+			<td>{{info.mobile_no}}</td>
+			<td><a href="{% url 'Edit' info.id %}" class="btn btn-success">Edit</a> <a href="#" class="btn btn-danger"> Delete</a></td>
+			
+		</tr>
+		{% endfor %}
+		</tbody>
+	</table>
+
+
+</div> 
+</div>
+</body>
+</html>

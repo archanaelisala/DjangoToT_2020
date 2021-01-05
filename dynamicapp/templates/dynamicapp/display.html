@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css'%}">
+ 
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+<div class="container">
+		<div class="card mt-5 mx-auto col-md-6">
+			<div class="card-body">
+				<h3 class= "bg-info text-white text center p-2 border-rounded">Details</h3>
+				<p><b>Firstname:</b>  {{fn}}</p>
+				<p><b>Lastname:</b>{{ln}}</p>
+				<p><b>Branch:</b>{{br}}</p>
+				<p><b>Age:</b>{{age}}</p>
+				<p><b>Email:</b>{{email}}</p>
+				<p><b>Password:</b>{{pwd}}</p>
+				<p><b>Gender:</b>{{gen}}</p>
+				<p><b>Languages:</b>{{lan}}</p>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+</body>
+</html>

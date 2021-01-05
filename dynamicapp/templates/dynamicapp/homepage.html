@@ -1,0 +1,47 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css'%}">
+ 
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <style type="text/css">
+			.container {
+				border: 1px solid red;
+				width: 40%;
+				margin-left:28% ;
+				margin-top: 4%;
+				font-family:italic;
+				font-weight: 800;
+				padding: 35px;
+						}
+			
+	</style>
+</head>
+<body>
+	<div class="container ">
+		<div class="row">
+			
+			<a href="{% url 'registerform' %}" class="btn btn-outline-success col-md-5">Register</a>
+			
+		
+			<a href="{% url 'display' %}" class="btn btn-outline-primary col-md-5 mx-auto">Display</a>
+		
+
+		</div>
+		
+			
+	
+
+	</div>
+
+	
+
+	
+</body>
+</html>
+</nav>

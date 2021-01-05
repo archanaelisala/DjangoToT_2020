@@ -6,23 +6,54 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'css/reg.css' %}">
 </head>
 <body>
-	<div class="container">
-		
-		<h1>REGISTRATION PAGE</h1>
+			<div class="container">
+				<div class="card">
+					<div class="card-header bg-info"><h4>Registration Page</h4>
+						<div class="form-group">
+							<label for="first name">First Name</label>
+							<input type="text" name="Fname" id="fname" placeholder="Enter First Name" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="last name">Last Name</label>
+							<input type="text" name="Lname" id="lname" placeholder="Enter Last Name" class="form-control">
+							
+						</div>
+						<div class="form-group">
+							<label for="Phone">Phone</label>
+							<input type="number" name="Phone" id="phone" placeholder="Enter phone number" class="form-control">
+							
+						</div>
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="text" name="email" id="email" placeholder="Enter Email" class="form-control">
+							
+						</div>
+						<div class="form-group">
+							<label for="password">Password</label>
+							<input type="password" name="password" id="password" placeholder="Enter Password" class="form-control">
+							
+						</div>
+						<div class="form-group">
+							<label for="password">Confirm Password</label>
+							<input type="password" name="cpassword" id="cpassword" placeholder="Confirm Your password" class="form-control">
+							
+						</div>
+						
+						
+					</div>
+					<div class="card-footer bg-secondary">
+						<button type="submit" class="btn btn-danger">Register</button>
+						
+					</div>
+					
+				</div>
 
-		<label>First Name:<input type="text" name="fname" id="fname" placeholder="Enter First Name"></label>
 
-		<label>Last Name:<input type="tect" name="lname" id="lname" placeholder="Enter Last name"></label>
-		
-		<label>Email:<input type="email" name="emailid" id="email" placeholder="Enter Email Id"></label>
-
-		<label>Password:<input type="password" name="password" placeholder="Enter Password"></label>
-
-		<label>Confirm Password:<input type="password" name="password" placeholder="Enter Password"></label>
-
-		<label><input type="submit" value="Register" class="save"></label>
+				
+			</div>
+			
+		</div>
 		
 	</div>
-
 </body>
 </html>

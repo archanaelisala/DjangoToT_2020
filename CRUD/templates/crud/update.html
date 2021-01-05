@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Student</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+	<
+	<div class="container">
+	<form action="#" method="POST">
+		{% csrf_token %}
+		<h2 class="bg-light">update Student Data</h2>
+		<div class="form-group">
+			<label>Student Name</label>
+			<input type="text" value="{{data.name}}" name="Studentname" id="Student name" placeholder="Enter Student Name" required class="form-control"><br>
+			<label>Roll number</label>
+			<input type="text" name="rollnum" value="{{data.rollnum}}" id="rollnum" placeholder="Enter Roll Number" class="form-control"><br>
+			<label>Age</label>
+			<input type="number" name="age" value="{{data.age}}" id="age" placeholder="Enter Your Age" class="form-control"><br>
+			<label>Mobile</label>
+			<input type="number" name="phone" value="{{data.phone}}" id="phone" placeholder="Enter your number" class="form-control"><br>
+			<label>Email</label>
+			<input type="email" name="email" id="email" value="{{data.email}}" placeholder="Enter your Email" class="form-control"><br>
+
+		
+		</div>
+		<div>
+
+			<input type="submit" value="update" class="btn btn-bg-info btn-lg mt-3">
+
+<!-- 			<a href="{% url 'read' %}"  class="btn btn-outline-primary btn-lg mt-3">cancel</a>
+ -->
+		</div>
+
+
+	</form>
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Read Data</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+	<div class="container">
+		<!-- <a href="{% url 'AddNew' %}" class="btn btn-info mt-5 float-right">AddNew</a> -->
+		<h2 class="bg-secondary text-center p-3 border rounded text-white mt-5">Display New Student Data</h2>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Name</th>
+					<th>Roll Num</th>
+					<th>Age</th>
+					<th>Phone</th>
+					<th>Email</th>
+					<th>Gender</th>
+					<th>Languages</th>
+					<th>Operation</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for i in newdata %}
+				<tr>
+					<td>{{i.id}}</td>
+					<td>{{i.name}}</td>
+					<td>{{i.rollnum}}</td>
+					<td>{{i.age}}</td>
+					<td>{{i.phone}}</td>
+					<td>{{i.email}}</td>
+					<td>{{i.gender}}</td>
+					<td>{{i.languages}}</td>
+					<td>
+						<a href="{% url 'update' i.id%}" class="btn btn-warning btn-rounded btn-sm my-0">Edit</a>
+						<a href="{% url 'deleteNew' i.id%}" class="btn btn-danger btn-rounded btn-sm my-0">Delete</button></a>
+						
+					</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+			
+		</table>
+		
+	</div>
+
+
+</body>
+</html>
